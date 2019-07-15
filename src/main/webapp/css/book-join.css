@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+
+fieldset {
+    width: 800px;
+    height: 800px;
+    margin: 15% auto;
+}
+div {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid gray;
+
+}
+label {
+    width: 130px;
+    display: inherit;
+
+    
+}
+input {
+    margin: 3px;
+    width: 200px;
+    height: 20px;
+    border: 1px solid black;
+}
