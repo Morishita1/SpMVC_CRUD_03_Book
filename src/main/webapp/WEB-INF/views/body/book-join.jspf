@@ -3,30 +3,35 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <c:set var="rootPath" value="${pageContext.request.contextPath}" />
 
-<link rel="stylesheet" type="text/css" href="${rootPath}/css/book-join.css">
+<link rel="stylesheet" type="text/css"
+	href="${rootPath}/css/book-join.css?ver=20190716">
 
-  <fieldset>
-        <legend>회원가입</legend>
-        
-        <div>
-            <label for="m_userid">ID</label>
-            <input type="text" name="m_userid" id="m_userid" placeholder="사용자 ID를 입력해주세요">
-        </div><br><br><br>
-        <div>
-            <label for="m_passwoid">PASSWOID</label>
-            <input type="passwoid" name="m_passwoid" id="m_passwoid" placeholder="비밀번호를 입력하세요">
-        </div><br><br><br>
-        <div>
-            <label for="re_passwoid">RE-PASSWOID</label>
-            <input type="passwoid" name="re_passwoid" id="re_passwoid" placeholder="비밀번호를 한번더 입력하세요">
-        </div><br><br><br>
-        <div>
-            <label for="m_email">이메일</label>
-            <input type="email" name="m_email" id="m_email" placeholder="이메일 주소를 입력하세요">
-        </div><br><br><br>
-        <div>
-            <label for="m_tel">전화번호</label>
-            <input type="phone" name="m_tel" id="m_tel" placeholder="전화번호를 입력하세요">
-        </div><br><br><br>
-        <button>회원가입</button>
-    </fieldset>
+<form method="POST">
+
+	<fieldset>
+		<legend>회원가입</legend>
+		<div class="in-box">
+			<label for="m_userid">회원아이디</label> 
+			<input type="text"	name="m_userid" id="m_userid">
+		</div>
+		<div class="in-box">
+			<label for="m_password">비밀번호</label> 
+			<input type="password"	name="m_password" id="m_password">
+		</div>
+		<div class="in-box">
+			<label for="m_name">회원이름</label> 
+			<input type="text" name="m_name"	id="m_name">
+		</div>
+		<div class="in-box">
+			<label for="m_email">이메일</label> 
+			<input type="text" name="m_email"	id="m_email">
+		</div>
+		<div class="in-box">
+			<label for="m_tel">전화번호</label> 
+			<input type="text" name="m_tel"	id="m_tel">
+		</div>
+		<div class="btn-box">
+			<button>회원가입</button>
+		</div>
+	</fieldset>
+</form>
